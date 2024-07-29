@@ -34,8 +34,8 @@ This is a RESTful API for a hotel booking system built with Node.js, Express, an
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/hotel-booking-api.git
-   cd hotel-booking-api
+   git clone https://github.com/bishworup002/hotel-backend.git
+   cd hotel-backend
    ```
 
 2. Install dependencies:
