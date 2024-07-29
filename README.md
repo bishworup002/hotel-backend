@@ -178,9 +178,9 @@ VALUES
 ('seaside-villa', 'queen-room', '/uploads/bedroom3.jpg', 'Queen Room', 1),
 ('seaside-villa', 'garden-room', '/uploads/bedroom4.jpg', 'Garden Room', 1),
 ('mountain-lodge', 'pine-suite', '/uploads/bedroom2.jpg', 'Pine Suite', 1),
-('mountain-lodge', 'elk-room', '/uploads/mountain-lodge-elk-room.jpg', 'Elk Room', 1),
-('mountain-lodge', 'bear-den', '/uploads/mountain-lodge-bear-den.jpg', 'Bear Den', 2),
-('city-loft', 'urban-suite', '/uploads/city-loft-urban-suite.jpg', 'Urban Suite', 1);
+('mountain-lodge', 'elk-room', '/uploads/bedroom4.jpg', 'Elk Room', 1),
+('mountain-lodge', 'bear-den', '/uploads/bedroom1.jpg', 'Bear Den', 2),
+('city-loft', 'urban-suite', '/uploads/bedroom5.jpg', 'Urban Suite', 1);
 ```
 
 To use this sample data:
