@@ -148,7 +148,7 @@ VALUES
 INSERT INTO hotel_images (hotel_id, image_url)
 VALUES 
 (1, '/uploads/hotel12.jpg'),
-(1, '/uploads/hotel12.jpg'),
+(1, '/uploads/hotel11.jpg'),
 (1, '/uploads/hotel13.jpg'),
 (1, '/uploads/hotel14.jpg'),
 (1, '/uploads/hotel15.jpg'),
