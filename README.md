@@ -117,10 +117,6 @@ CREATE TABLE rooms (
 );
 ```
 
-## Sample Data
-
-To populate your database with sample data, run the SQL commands provided in the `sample_data.sql` file.
-e.
 
 
 
@@ -132,39 +128,56 @@ To populate your database with sample data, you can use the following SQL comman
 -- Sample data for hotels table
 INSERT INTO hotels (slug, title, description, guest_count, bedroom_count, bathroom_count, amenities, host_name, host_image, address, latitude, longitude)
 VALUES 
-('seaside-villa', 'Seaside Villa', 'A beautiful villa overlooking the ocean', 6, 3, 2, ARRAY['Wi-Fi', 'Pool', 'Beach Access'], 'John Doe', '/uploads/host-john-doe.jpg', '123 Coastal Road, Beachtown', 34.052235, -118.243683),
-('mountain-lodge', 'Mountain Lodge', 'Cozy lodge in the heart of the mountains', 8, 4, 3, ARRAY['Wi-Fi', 'Fireplace', 'Hiking Trails'], 'Jane Smith', '/uploads/host-jane-smith.jpg', '456 Mountain Pass, Alpineville', 39.739236, -104.990251),
-('city-loft', 'Downtown City Loft', 'Modern loft in the city center', 2, 1, 1, ARRAY['Wi-Fi', 'Gym', 'Rooftop Terrace'], 'Mike Johnson', '/uploads/host-mike-johnson.jpg', '789 Main Street, Metropolis', 40.712776, -74.005974);
+('seaside-villa', 'Seaside Villa', 
+'Welcome to the Seaside Villa, a stunning property overlooking the magnificent ocean. Enjoy breathtaking views from every room and relax in the comfort of a fully equipped home. Perfect for families or groups, this villa offers all the amenities you need for a memorable stay. Conveniently located near popular attractions and beaches, you will have plenty to explore during your visit. The spacious outdoor area and private pool make it an ideal getaway.', 
+6, 3, 2, ARRAY['WiFi', 'Pool', 'Gym','Beach Access','Kitchen','TV','Washer','Smoke alarm','Refrigerator'], 
+'John Doe', '/uploads/host-john-doe.jpg', '123 Coastal Road, Beachtown', 34.052235, -118.243683),
+
+('mountain-lodge', 'Mountain Lodge', 
+'Experience the charm of our cozy Mountain Lodge, nestled in the heart of the breathtaking mountains. This retreat offers a perfect blend of rustic charm and modern comfort. Enjoy hiking trails right at your doorstep and cozy up by the fireplace after a day of adventure. With ample space and amenities, it’s perfect for families or groups looking for a serene escape in nature. The lodge’s unique location provides both tranquility and accessibility to nearby attractions.', 
+8, 4, 3, ARRAY['WiFi', 'Fireplace', 'Gym','Hiking Trails','Beach Access','Kitchen','TV','Washer','Smoke alarm','Refrigerator'], 
+'Jane Smith', '/uploads/host-jane-smith.jpg', '456 Mountain Pass, Alpineville', 39.739236, -104.990251),
+
+('city-loft', 'Downtown City Loft', 
+'Discover the modern comfort of our Downtown City Loft, situated in the bustling heart of the city. This stylish loft is ideal for solo travelers or couples looking for an urban retreat. With contemporary furnishings and a rooftop terrace offering stunning city views, you’ll feel right at home. The loft’s central location provides easy access to the city’s top attractions, dining, and shopping districts, making it the perfect base for your city adventure.', 
+2, 1, 1, ARRAY['Wi-Fi', 'Gym', 'Rooftop Terrace'], 
+'Mike Johnson', '/uploads/host-mike-johnson.jpg', '789 Main Street, Metropolis', 40.712776, -74.005974);
+
 
 -- Sample data for hotel_images table
 INSERT INTO hotel_images (hotel_id, image_url)
 VALUES 
-(1, '/uploads/hotel1.jpg'),
-(1, '/uploads/hotel2.jpg'),
-(1, '/uploads/hotel3.jpg'),
-(1, '/uploads/hotel4.jpg'),
-(1, '/uploads/hotel5.jpg'),
-(1, '/uploads/hotel6.jpg'),
+(1, '/uploads/hotel12.jpg'),
+(1, '/uploads/hotel12.jpg'),
+(1, '/uploads/hotel13.jpg'),
+(1, '/uploads/hotel14.jpg'),
+(1, '/uploads/hotel15.jpg'),
+(1, '/uploads/hotel16.jpg'),
 (1, '/uploads/hotel7.jpg'),
 (1, '/uploads/hotel8.jpg'),
 (1, '/uploads/hotel9.jpg'),
 (1, '/uploads/hotel10.jpg'),
 (1, '/uploads/hotel11.jpg'),
+(1, '/uploads/hotel14.jpg'),
 (2, '/uploads/hotel11.jpg'),
-(2, '/uploads/hotel11.jpg'),
+(2, '/uploads/hotel12.jpg'),
+(2, '/uploads/hotel13.jpg'),
+(2, '/uploads/hotel14.jpg'),
+(2, '/uploads/hotel15.jpg'),
 (3, '/uploads/hotel11.jpg'),
-(3, '/uploads/hotel11.jpg');
+(3, '/uploads/hotel1.jpg'),
+(3, '/uploads/hotel11.jpg'),
+(3, '/uploads/hotel12.jpg'),
+(3, '/uploads/hotel3.jpg');
 
 -- Sample data for rooms table
 INSERT INTO rooms (hotel_slug, room_slug, room_image, room_title, bedroom_count)
 VALUES 
-('seaside-villa', 'master-suite', '/uploads/room1.jpg', 'Master Suite', 1),
-('seaside-villa', 'ocean-view-room', '/uploads/room2.jpg', 'Ocean View Room', 1),
-('seaside-villa', 'garden-room', '/uploads/room3.jpg', 'Queen Room', 1),
-('seaside-villa', 'garden-room', '/uploads/room4.jpg', 'Garden Room', 1),
-('seaside-villa', 'garden-room', '/uploads/room5.jpg', 'Garden Room', 1),
-('seaside-villa', 'garden-room', '/uploads/room6.jpg', 'Garden Room', 1),
-('mountain-lodge', 'pine-suite', '/uploads/mountain-lodge-pine-suite.jpg', 'Pine Suite', 1),
+('seaside-villa', 'master-suite', '/uploads/bedroom5.jpg', 'Master Suite', 1),
+('seaside-villa', 'ocean-view-room', '/uploads/bedroom2.jpg', 'Ocean View Room', 1),
+('seaside-villa', 'queen-room', '/uploads/bedroom3.jpg', 'Queen Room', 1),
+('seaside-villa', 'garden-room', '/uploads/bedroom4.jpg', 'Garden Room', 1),
+('mountain-lodge', 'pine-suite', '/uploads/bedroom2.jpg', 'Pine Suite', 1),
 ('mountain-lodge', 'elk-room', '/uploads/mountain-lodge-elk-room.jpg', 'Elk Room', 1),
 ('mountain-lodge', 'bear-den', '/uploads/mountain-lodge-bear-den.jpg', 'Bear Den', 2),
 ('city-loft', 'urban-suite', '/uploads/city-loft-urban-suite.jpg', 'Urban Suite', 1);
