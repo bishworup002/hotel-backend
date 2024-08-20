@@ -1,6 +1,7 @@
 # Hotel Booking API
 
 This is a RESTful API for a hotel booking system built with Node.js, Express, and PostgreSQL. It allows users to view hotel details, room information, and create new hotels and rooms with image upload functionality.
+## [**Frontend Link🔗**](https://github.com/bishworup002/hotel-frontend)
 
 ## Table of Contents
 
